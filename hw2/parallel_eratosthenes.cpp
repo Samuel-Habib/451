@@ -65,7 +65,7 @@ public:
 					clear_prime(j);
 			}
 
-		for (uint64_t i = (lim + 1)| 1; i <= b; i += 2)
+		for (uint64_t i = (a+1)| 1; i <= b; i += 2)
 			if (p[i])
 				count++;
         *c = count;
@@ -99,7 +99,7 @@ int main(int argc, char* argv[]) {
 
     p1.join(); 
     p2.join();
-    uint64_t final = count_ptr; 
+    uint64_t final = count_ptr + count_ptr2; 
 
 	auto t1 = std::chrono::high_resolution_clock::now();
 	auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(t1 - t0);
