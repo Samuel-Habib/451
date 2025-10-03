@@ -2,6 +2,7 @@
 #include <chrono>
 #include <cmath>
 #include <thread>
+#include <vector>
 
 using namespace std;
 // 3*5*7 = 105  *   64 
